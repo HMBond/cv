@@ -3,9 +3,7 @@
 /* MY GLOBAL CSS VARIABLES */
 
 :root {
-	/* ADJUST COLOR */
-	/* --accent-color: #55777c; */
-	--link-color: #959595;
+	--link-color: #ff7700;
 	--accent-font: 'Open Sans', sans-serif;
 	--grey-dark: #333;
 	--grey-mid-dark: #545454;
@@ -14,8 +12,8 @@
 
 	/* ADJUST SPACING */
 	--main-column-width: 65%;
-	--vertical-space-between-sections: 0.8rem;
-	--vertical-space-between-subsections: 0.7rem;
+	--vertical-space-between-sections: 1rem;
+	--vertical-space-between-subsections: 1rem;
 	--horizontal-space-between-columns: 25px;
 	--horizontal-offset: -25px;
 	--list-line-height: 1.3em;
@@ -24,7 +22,6 @@
 	/* --column-order: row-reverse; */
 	/* --more-centered: center; */
 }
-
 
 /* DEFAULT GLOBAL STYLES */
 
@@ -47,6 +44,7 @@ body {
 a {
 	color: var(--link-color);
 	text-decoration: none;
+	font-weight: bold;
 }
 
 label {
@@ -120,7 +118,7 @@ ul {
 }
 
 hr.section-underline {
-	margin: -1px 0 var(--vertical-space-between-subsections) 0;
+	margin: 0.1rem 0 var(--vertical-space-between-subsections) 0;
 }
 
 .section {
@@ -175,7 +173,7 @@ hr.section-underline {
 
 .top-right .contact-item i {
 	padding-right: 3px;
-} 
+}
 
 i {
 	color: var(--grey-dark);

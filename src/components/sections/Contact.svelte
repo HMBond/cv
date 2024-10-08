@@ -3,8 +3,23 @@
 	export let details;
 </script>
 
+<div class="contact-section">
+	{#each details as { subcategory, contactDetails }}
+		<div class="contact-subsection">
+			{#if subcategory}
+				<div class="contact-subhead">{subcategory}</div>
+			{/if}
+			<div class="contact-items">
+				{#each contactDetails as detail}
+					<ContactItem {detail} />
+				{/each}
+			</div>
+		</div>
+	{/each}
+</div>
+
 <style>
-	#contact-section {
+	.contact-section {
 		margin-top: 14px; /* align baseline with adjacent component text */
 	}
 
@@ -24,18 +39,3 @@
 		line-height: 1.7em;
 	}
 </style>
-
-<div id="contact-section">
-	{#each details as { subcategory, contactDetails }}
-		<div class="contact-subsection">
-			{#if subcategory}
-				<div class="contact-subhead">{subcategory}</div>
-			{/if}
-			<div class="contact-items">
-				{#each contactDetails as detail}
-					<ContactItem {detail} />
-				{/each}
-			</div>
-		</div>
-	{/each}
-</div>

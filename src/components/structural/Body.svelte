@@ -1,6 +1,6 @@
 <script>
-	import SideColumn from './SideColumn.svelte';
 	import MainColumn from './MainColumn.svelte';
+	import SideColumn from './SideColumn.svelte';
 
 	export const sideColumn = [
 		{
@@ -8,47 +8,44 @@
 			label: 'Contact',
 			details: [
 				{
-					subcategory: 'Say hi',
+					subcategory: 'details',
 					contactDetails: [
 						{
 							isLink: true,
 							type: 'email',
-							text: 'theresa.l.morelli@gmail.com',
+							text: 'hubertusmariabond@gmail.com',
 							icon: 'email',
 						},
 						{
 							isLink: true,
 							type: 'phone',
-							text: '303-909-1445',
+							text: '+31654316094',
 							icon: 'phone',
-						},
-						{
-							text: 'Seattle, WA',
-							icon: 'location',
 						},
 					],
 				},
 				{
-					subcategory: 'Find me online',
+					subcategory: 'Social media',
 					contactDetails: [
 						{
 							isLink: true,
 							type: 'web',
-							url: 'bit.ly/2vJ0owX',
-							text: 'theresamorelli.com',
+							url: 'mrsunshine.live',
+							text: 'mrsunshine.live',
+							icon: 'user',
 						},
 						{
 							isLink: true,
 							type: 'web',
-							url: 'bit.ly/2Q0GoMV',
-							text: 'github.com/theresamorelli',
+							url: 'github.com/hmbond',
+							text: 'github.com/hmbond',
 							icon: 'github',
 						},
 						{
 							isLink: true,
 							type: 'web',
-							url: 'bit.ly/2xjOx8M',
-							text: 'linkedin.com/in/theresa-morelli',
+							url: 'www.linkedin.com/in/mike-bond-3258a32a/',
+							text: 'linkedin.com/in/hmbond',
 							icon: 'linkedin',
 						},
 					],
@@ -59,23 +56,22 @@
 			type: 'skills',
 			label: 'Skills',
 			details: [
-				'JavaScript',
-				'ES6',
+				'Typescript',
+				'ESNext',
 				'React',
-				'NodeJS',
-				'MobX',
-				'Redux',
+				'Next',
+				'Svelte',
 				'Ruby on Rails',
-				'MongoDB',
-				'PostgreSQL',
-				'jQuery',
-				// 'Express',
+				'.NET / Blazor',
+				'Neo4j',
+				'NeonDb',
+				'SQL',
+				'Node',
+				'Bun',
+				'C#',
 				'HTML',
 				'CSS',
-				'Git',
-				'Bootstrap',
-				// 'Agile',
-				// 'Jira',
+				'zsh',
 			],
 		},
 		{
@@ -83,25 +79,26 @@
 			label: 'Projects',
 			details: [
 				{
-					title: 'Hello Pizza Truck',
-					url: 'http://bit.ly/2VXTVJ3',
-					link: 'hellopizzatruck.com',
+					title: 'Towards the Artist',
+					url: 'soundcloud.com/towardstheartist',
+					link: 'soundcloud.com/towardstheartist',
+					icon: 'music',
 					description:
-						'Static site for selling food truck. Built with Gatsby, React hooks, and Slick carousel.',
+						'Recording local artists and presenting their works online.',
 				},
 				{
-					title: 'Newsmash',
-					url: 'http://bit.ly/2Ix2sKW',
-					link: 'newsmashed.herokuapp.com',
+					title: 'Unity Exhibition',
+					url: 'humanityhouse.org/',
+					link: 'humanityhouse.org/',
+					icon: 'eye',
 					description:
-						'Data visualization for the news. Integrated three external APIs with React/Redux app and PostgreSQL.',
+						'Coding and building an interactive art installation to state the importance of privacy and identity.',
 				},
 				{
-					title: 'Svelte Resume',
-					url: 'bit.ly/38E1FCO',
-					link: 'bit.ly/svelte-resume',
+					title: 'Volunteering',
+					icon: 'heart',
 					description:
-						'Flexible and customizable PDF resume template built with Svelte.',
+						'Previous board member of a people society in Delft and two living groups. <a target="_blank" href="https://wolpop.nl">Organizing concerts</a> and volunteering at festivals and the <a target="_blank" href="https://www.designresearchsociety.org/">DRS Conference 2014</a>.',
 				},
 			],
 		},
@@ -112,70 +109,54 @@
 			label: 'Experience',
 			details: [
 				{
-					title: 'Contract Full Stack Developer',
-					subtitle: 'The Wally Shop',
-					dates: `4/2019 — ongoing`,
-					location: 'Remote',
-					description: 'Reusable packaging grocery delivery service',
+					title: 'Senior Full-Stack Developer',
+					subtitle: 'Thoughtworks',
+					dates: `4/2021 - 2/2024`,
+					location: 'Berlin, Germany',
+					description:
+						'Working on an internal application for one of the mayor automotive companies.',
 					list: [
-						'Update and add new features to customer-facing e-commerce app using React with MobX and Bootstrap.',
-						'Implement NodeJS API endpoints using MongoDB queries.',
-						'Execute miscellaneous technical projects such as auto-generating unique PDFs from a graphics file.',
-
-						// 'Implement product rating system to handle both numerical reviews and comments',
-						// Use React.js to add prompts and visual cues for shoppers to update product and inventory information.
-						// Contracted to develop tech stack focused on MongoDB, Express.js, React, Node.js.
+						'Advocating to code for <a target="_blank" href="https://www.thoughtworks.com/insights/topic/accessibility">accessibility</a> by organizing practical workshops.',
+						'Building new features within a complex business context.',
+						'Improving code quality by removing technical depth and implementing guidelines and a common coding style.',
 					],
 				},
 				{
-					title: 'Front End Developer',
-					subtitle: 'Sixcycle',
-					dates: '4/2019 — 10/2019',
-					location: 'Brooklyn, NY',
-					description: 'Endurance coaching software used by Team in Training',
+					title: 'Freelancer',
+					subtitle: 'The Bond Experience',
+					dates: `5/2019 - 3/2022`,
+					location: 'Delft, The Netherlands',
+					description:
+						'Working as freelancer to produce small web apps and immersive background music for theater/social interaction projects.',
 					list: [
-						'Maintained primary ownership of the front end of a React / JavaScript SaaS web app used by thousands of coaches and athletes daily.',
-						'Implemented new features from InVision prototypes, including message templates and public community groups.',
-						'Improved stability through bug fixes and refactoring to reduce tech debt.',
+						'Various music productions for <a target="_blank" href="https://smeltsmelt.nl/">SMELT</a> performances',
+						'Working on a <a target="_blank" href="https://mrsunshine.live/mmc">modular midi controller</a>',
 					],
 				},
 				{
-					title: 'Math Fellow, Americorps',
-					subtitle: 'Denver Public Schools',
-					dates: '2017 — 2018',
-					location: 'Denver, CO',
-					description: 'Middle school math intervention program',
+					title: 'Senior Front-end Developer',
+					subtitle: 'IX Technologies B.V.',
+					dates: '2/2020 - 7/2021',
+					location: 'Delft, The Netherlands',
+					description:
+						'Maintaining serious games and admission tests/simulations for clients in research and air traffic control (ATC). Exploring technical possibilities within a tech-stack transition and working in a small team, directly involved with the clients.',
 					list: [
-						'Improved academic outcomes for a diverse student population by creating and teaching lesson plans that included original worksheets and activities.',
-						'Developed a positive motivation system to encourage on-task behavior, teamwork, and delaying of rewards.',
-						'Launched and led HTML coding enrichment class with Galvanize students.',
-						// • Taught small-group 6th grade math intervention, writing and delivering original lessons.
-						// • Managed behavior and relationships with a positive motivation system, restorative conversations, and supplemental tutoring.
-						// • Facilitated an elective with Galvanize where students learned HTML and built websites (deployed and hosted by Galvanize).
+						'Creating a brand new ATC admission simulation in .NET Blazor.',
+						'Developing a custom .NET Blazor component library to be integrated in simulations, tests and the administration platform',
 					],
 				},
 				{
-					title: 'Technical Writer',
-					subtitle: 'KBC Advanced Technologies',
-					dates: '2014 — 2015',
-					location: 'Denver, CO',
-					description: 'Oil refinery operations manuals',
+					title: 'Junior Front-end Developer',
+					subtitle: 'Mobiel.nl',
+					dates: '8/2018 — 7/2019',
+					location: 'Leidschendam, The Netherlands',
+					description:
+						'Learning the ins and outs of modern front-end development from experts in the field.',
 					list: [
-						'Produced high quality training manuals that included written content and Visio drawings, synthesizing information from various sources.',
+						'Daily code-reviews and working in a Scrum Team.',
+						'Working with React, MobX and Ruby on Rails.',
 					],
 				},
-
-				// Linkedin
-
-					// 'Produced high quality training manuals for oil refinery operations to communicate how materials move through complex systems.',
-					// 'Wrote clear, concise content with information compiled from client documents, photos, and detailed flow diagrams.'
-					// 'Created Visio drawings of condensed stream and equipment information to assist with visual understanding.',
-
-				// Honeybee Robotics, New York, NY
-				// Operations Associate, 2012–2013
-				// • Controlled project document streams and managed all incoming bills, serving as the main point of contact for vendors.
-				// • Created a macro in Excel VBA to automate entry and processing of expense data.
-				// • Updated and expanded company website and blog using Joomla!
 			],
 		},
 		{
@@ -183,21 +164,32 @@
 			label: 'Education',
 			details: [
 				{
-					title: 'Software Engineering Program',
-					subtitle: 'Flatiron School',
-					dates: '2018 — 2019',
-					location: 'Remote',
+					title: 'Msc. Design for Interaction',
+					subtitle: 'TU-Delft',
+					dates: '2013 - 2016',
+					location: 'Delft, The Netherlands',
 				},
 				{
-					title: 'B.S. Chemical Engineering',
-					subtitle: 'Colorado School of Mines',
-					dates: '2003 — 2007',
-					location: 'Golden, CO',
+					title: 'Bsc. Industrial Design',
+					subtitle: 'TU-Delft',
+					dates: '2006 - 2011',
+					location: 'Delft, The Netherlands',
+				},
+				{
+					title: 'Minor Physics Education',
+					subtitle: 'TU-Delft',
+					dates: '2009',
+					location: 'Delft, The Netherlands',
 				},
 			],
 		},
 	];
 </script>
+
+<div class="main-body">
+	<MainColumn sections={mainColumn} />
+	<SideColumn sections={sideColumn} />
+</div>
 
 <style>
 	div {
@@ -207,8 +199,3 @@
 		margin: 0 var(--horizontal-offset);
 	}
 </style>
-
-<div class="main-body">
-	<MainColumn sections={mainColumn} />
-	<SideColumn sections={sideColumn} />
-</div>

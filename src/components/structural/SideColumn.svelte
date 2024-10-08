@@ -3,14 +3,14 @@
 	export let sections;
 </script>
 
-<div id="side-column">
+<div class="side-column">
 	{#each sections as { label, details, type }}
-		<Section {label} {details} {type}></Section>
+		<Section {label} {details} {type} />
 	{/each}
 </div>
 
 <style>
-	#side-column {
+	.side-column {
 		width: calc(100% - var(--main-column-width));
 		margin: 0 var(--horizontal-space-between-columns);
 		text-align: var(--more-centered);

@@ -1,32 +1,30 @@
 <script>
-	export const name = 'Theresa Morelli';
+	export const name = 'Mike Bond';
 	const summaryLines = [
-		'Curious and adaptable web developer with 10+ months of front end production experience. Especially skilled with React and currently learning more frameworks. Career history includes technical writing, education, and chemical engineering. Always thinking about the user experience. Always brainstorming app ideas.',
-
-		// meaningful and impactful
-		// supporting the underdog
-
-		// I enjoy data, design, and clean code.
-
-		// Enjoy the act of creation as well as refactoring.
-
-		// I like to build things I like to use.
-
-		// Try to be thoughtful always.
+		'Full-Stack developer with an affinity for UX. Experienced in working on internal and customer facing applications. Passionate about building reliable software by managing technical depth and writing thoughtfull clean code together in a streamlined team.',
 	];
 </script>
 
+<div class="header">
+	<h1 class="my-name">{name}</h1>
+	<div class="summary">
+		{#each summaryLines as line, i}
+			<div class="summary-line-{i}">
+				{@html line}
+			</div>
+		{/each}
+	</div>
+</div>
+
 <style>
-	#header {
+	.header {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		justify-content: space-between;
-		text-align: center;
 		margin-bottom: var(--vertical-space-between-sections);
 	}
 
-	#my-name {
+	.my-name {
 		text-transform: uppercase;
 		color: var(--accent-color);
 		font-family: var(--accent-font);
@@ -44,14 +42,3 @@
 		color: #000;
 	}
 </style>
-
-<div id="header">
-	<h1 id="my-name">{name}</h1>
-	<div class="summary">
-		{#each summaryLines as line, i}
-			<div class="summary-line-{i}">
-				{@html line}
-			</div>
-		{/each}
-	</div>
-</div>

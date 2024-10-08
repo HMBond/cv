@@ -15,6 +15,25 @@
 	};
 </script>
 
+<div class="simple-detail detail-container">
+	<div class="top">
+		<div class="title">{title}</div>
+		{#if subtitle}
+			<div class="subtitle">{subtitle}</div>
+		{/if}
+		{#if link}
+			<ContactItem {detail} />
+		{/if}
+	</div>
+	<div class="bottom">
+		{#if description}
+			<div class="description">
+				{@html description}
+			</div>
+		{/if}
+	</div>
+</div>
+
 <style>
 	.top {
 		flex-direction: column;
@@ -30,29 +49,7 @@
 		margin-bottom: 6px;
 	}
 
-  
-  .subtitle {
-    margin-bottom: 4px;
-  }
-
-  a {
-    font-size: 0.9em;
-  }
+	.subtitle {
+		margin-bottom: 4px;
+	}
 </style>
-
-<div class="simple-detail detail-container">
-	<div class="top">
-		<div class="title">{title}</div>
-		{#if subtitle}
-			<div class="subtitle">{subtitle}</div>
-		{/if}
-    {#if link}
-      <ContactItem {detail} />
-    {/if}
-	</div>
-	<div class="bottom">
-		{#if description}
-			<div class="description">{description}</div>
-		{/if}
-	</div>
-</div>

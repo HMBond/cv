@@ -1,4 +1,4 @@
 /node_modules/
 /public/build/
-
+/backup/
 .DS_Store
