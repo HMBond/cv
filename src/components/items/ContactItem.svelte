@@ -10,6 +10,7 @@
 		linkedin: 'fab fa-linkedin-in',
 		user: 'fa fa-user',
 		music: 'fa fa-music',
+		gamepad: 'fa fa-gamepad',
 		heart: 'fa fa-heart',
 		eye: 'fa fa-eye',
 	};

@@ -30,9 +30,16 @@
 						{
 							isLink: true,
 							type: 'web',
+							url: 'bondux.mrsunshine.live',
+							text: 'bondux.dev',
+							icon: 'user',
+						},
+						{
+							isLink: true,
+							type: 'web',
 							url: 'mrsunshine.live',
 							text: 'mrsunshine.live',
-							icon: 'user',
+							icon: 'music',
 						},
 						{
 							isLink: true,
@@ -63,6 +70,11 @@
 				'Svelte',
 				'Ruby on Rails',
 				'.NET / Blazor',
+				'TestCafe',
+				'Cypress',
+				'Playwright',
+				'Jest',
+				'Vitest',
 				'Neo4j',
 				'NeonDb',
 				'SQL',
@@ -78,6 +90,14 @@
 			type: 'simple-details',
 			label: 'Projects',
 			details: [
+				{
+					title: 'MMC-3000',
+					url: 'mmc.mrsunshine.live',
+					link: 'mmc.mrsunshine.live',
+					icon: 'gamepad',
+					description:
+						'Developing a whiteboard app for creating and sharing MIDI controllers. This enables artists to let the audience control the music.',
+				},
 				{
 					title: 'Towards the Artist',
 					url: 'soundcloud.com/towardstheartist',
@@ -114,11 +134,12 @@
 					dates: `4/2021 - 2/2024`,
 					location: 'Berlin, Germany',
 					description:
-						'Working on an internal application for one of the mayor automotive companies.',
+						'Improving architecture and building internal applications for one of the major German automotive companies.',
 					list: [
-						'Advocating to code for <a target="_blank" href="https://www.thoughtworks.com/insights/topic/accessibility">accessibility</a> by organizing practical workshops.',
-						'Building new features within a complex business context.',
-						'Improving code quality by removing technical depth and implementing guidelines and a common coding style.',
+						'Advocate for <a target="_blank" href="https://www.thoughtworks.com/insights/topic/accessibility">accessibility</a> by organizing practical workshops for over 50 developers within the account.',
+						'Building new features within a complex business context. Translating client needs into features.',
+						'Improving time to production by minimizing technical depth in testing and deployment.',
+						'Organizing cross-team sessions to improve code quality.',
 					],
 				},
 				{
@@ -130,7 +151,7 @@
 						'Working as freelancer to produce small web apps and immersive background music for theater/social interaction projects.',
 					list: [
 						'Various music productions for <a target="_blank" href="https://smeltsmelt.nl/">SMELT</a> performances',
-						'Working on a <a target="_blank" href="https://mrsunshine.live/mmc">modular midi controller</a>',
+						'Working on a <a target="_blank" href="https://mmc.mrsunshine.live">modular midi controller</a>',
 					],
 				},
 				{
@@ -139,9 +160,9 @@
 					dates: '2/2020 - 7/2021',
 					location: 'Delft, The Netherlands',
 					description:
-						'Maintaining serious games and admission tests/simulations for clients in research and air traffic control (ATC). Exploring technical possibilities within a tech-stack transition and working in a small team, directly involved with the clients.',
+						'Maintaining Air Traffic Control (ATC) admission tests and simulations for Eurocontrol and serious games for research at TNO Delft. Exploring technical possibilities within a tech-stack transition and working in a small team, directly involved with the clients and UX design.',
 					list: [
-						'Creating a brand new ATC admission simulation in .NET Blazor.',
+						'Designing and developing the m.v.p. of the renewed ATC simulation in .NET Blazor. This simulation test is now used for all applicants who apply to the ATC training in Europe, Canada, Singapore and other countries.',
 						'Developing a custom .NET Blazor component library to be integrated in simulations, tests and the administration platform',
 					],
 				},
@@ -153,8 +174,10 @@
 					description:
 						'Learning the ins and outs of modern front-end development from experts in the field.',
 					list: [
-						'Daily code-reviews and working in a Scrum Team.',
-						'Working with React, MobX and Ruby on Rails.',
+						'Rewriting the product page to use React + MobX and upgrading features together in a small scrum team.',
+						'Daily code-reviews and pair programming for a steep learning curve.',
+						'Version control, test driven development and deployment in Jenkins',
+						'Fixing backend bugs in Ruby on Rails.',
 					],
 				},
 			],
