@@ -1,8 +1,8 @@
 <script>
 	import Contact from '../sections/Contact.svelte';
-	import Skills from '../sections/Skills.svelte';
 	import FullDetails from '../sections/FullDetails.svelte';
 	import SimpleDetails from '../sections/SimpleDetails.svelte';
+	import Skills from '../sections/Skills.svelte';
 	export let label;
 	export let details;
 	export let type;
