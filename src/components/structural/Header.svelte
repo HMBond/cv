@@ -1,8 +1,6 @@
 <script>
-	export const name = 'Mike Bond';
-	const summaryLines = [
-		'Full-Stack developer with an affinity for UX. Experienced in working on internal and customer facing applications. Passionate about building reliable software by minimizing technical debt and writing thoughtfull clean code together in a streamlined team.',
-	];
+	export const name = 'Motivatie';
+	const summaryLines = [];
 </script>
 
 <div class="header">

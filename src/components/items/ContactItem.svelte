@@ -13,6 +13,7 @@
 		gamepad: 'fa fa-gamepad',
 		heart: 'fa fa-heart',
 		eye: 'fa fa-eye',
+		arrow: 'fa fa-arrow',
 	};
 	let linkIcon = fontAwesomeIconMap[icon] || defaultIcon;
 </script>
